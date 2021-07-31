@@ -173,6 +173,21 @@ ul {
   width: 40px;
   height: 40px;
 }
+.pic {
+  margin-left: 20%;
+}
+.pic img {
+  margin-top: -30%;
+  width: 260px;
+  height: 380px;
+}
+.cont h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.cont {
+  margin-left: 10%;
+}
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -247,5 +262,20 @@ ul {
   }
   .footer-col h4::before {
     margin-left: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pic {
+    margin-left: 10%;
+    width: 200px;
+    height: 300px;
+  }
+  .cont {
+    margin-top: 7%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .pic {
+    margin-left: 3%;
   }
 }
