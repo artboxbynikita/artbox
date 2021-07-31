@@ -117,6 +117,7 @@ ul {
 .footer {
   background-color: #24262b;
   padding: 70px 0;
+  margin-top: 15px;
 }
 .footer-col {
   width: 25%;
@@ -172,7 +173,6 @@ ul {
   width: 40px;
   height: 40px;
 }
-
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -207,7 +207,11 @@ ul {
     cursor: pointer;
   }
   .nav-links li {
-    display: none;
+    display: block;
+  }
+  .nav-links li {
+    text-align: center;
+    margin-top: 15%;
   }
 }
 .nav-active {
