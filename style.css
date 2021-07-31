@@ -115,7 +115,7 @@ ul {
   list-style: none;
 }
 .footer {
-  background-color: #24262b;
+  background-color: var(--nav-color);
   padding: 70px 0;
   margin-top: 15px;
 }
@@ -149,7 +149,7 @@ ul {
   color: #ffffff;
   text-decoration: none;
   font-weight: 300;
-  color: #bbbbbb;
+  color: #ffffff;
   display: block;
   transition: all 0.3s ease;
 }
