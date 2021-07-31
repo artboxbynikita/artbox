@@ -206,9 +206,13 @@ ul {
     display: block;
     cursor: pointer;
   }
+  .nav-links li {
+    display: none;
+  }
 }
 .nav-active {
   transform: translateX(0%);
+  display: block;
 }
 @keyframes navLinkFade {
   from {
