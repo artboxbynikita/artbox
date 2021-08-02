@@ -24,6 +24,7 @@
     opacity: 0;
   }
 }*/
+
 .logoname {
   margin-left: 30%;
   margin-top: 30px;
@@ -202,6 +203,31 @@ ul {
 .footer-col {
   width: 25%;
   padding: 0 15px;
+}
+.foot-logo {
+  margin-top: -20px;
+  padding-top: -20px;
+  color: white;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  text-align: center;
+}
+.foot-logo svg {
+  height: 50px;
+  margin-top: -20px;
+}
+svg path {
+  stroke-dasharray: 1000px;
+  stroke-dashoffset: 1000px;
+  animation: line-ani 2s ease forwards infinite;
+  z-index: 100;
+}
+@keyframes line-ani {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 .footer-col h4 {
   font-size: 18px;
