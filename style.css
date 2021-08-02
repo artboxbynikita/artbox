@@ -275,6 +275,9 @@ ul {
     margin-top: 80px;
     margin-bottom: 100px;
   }
+  .logoname {
+    margin-left: 100px;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -346,6 +349,13 @@ ul {
   .footer-col h4::before {
     margin-left: 40%;
   }
+  .logoname {
+    margin-left: 15px;
+  }
+  .logoimg img {
+    width: 250px;
+    margin-left: 15px;
+  }
 }
 @media screen and (max-width: 400px) {
   .pic {
@@ -353,10 +363,7 @@ ul {
     width: 200px;
     height: 300px;
   }
-  .logoimg img {
-    width: 50%;
-    margin-left: 30%;
-  }
+
   .cont {
     margin-top: 7%;
   }
