@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+@keyframes shoe{
+  0%{
+    transform: rotate(0deg) scale(.5);
+  }
+}
+@keyframes slideContent{
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+}
+
+    </style>
     <title>Artbox</title>
 </head>
 <body>
@@ -23,56 +37,20 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div class="heading">Latest <span>Products</span></div>
-    <section class="products">
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
+    <section>
+        <section class="home" id="home">
+
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <h3 class="logoname">Artbox</h3>
+                    </div>
+                    <div class='logoimg'>
+                        <img src="images/logo.jpg" class="shoe" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="price">400</div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400</div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400</div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400  </div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400</div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400</div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400</div>
-        </div>
-        <div class="product">
-            <div class="image">
-                <img src="images/IMG.jpg" alt="img">
-            </div>
-            <div class="price">400  </div>
-        </div>
+        </section>        
     </section>
     <section>
         <footer class="footer">
