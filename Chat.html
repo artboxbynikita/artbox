@@ -79,8 +79,8 @@
         background: #007bff;
     }
     .wrapper .form .inbox .msg-header{
-        max-width: 53%;
         margin-left: 10px;
+        max-width: 90%;
     }
     .form .inbox .msg-header p{
         color: #fff;
@@ -88,7 +88,6 @@
         border-radius: 10px;
         padding: 8px 10px;
         font-size: 14px;
-        word-break: break-all;
     }
     .form .user-inbox .msg-header p{
         color: #333;
@@ -178,9 +177,6 @@
             <div class="title">Chatbot</div>
             <div class="form">
                 <div class="bot-inbox inbox">
-                    <div class="icon">
-                        <i class="fas fa-user"></i>
-                    </div>
                     <div class="msg-header">
                         <p>Hello there, how can I help you?</p>
                     </div>
@@ -293,7 +289,7 @@
                 else {
                   msgreply = "I am sorry i could'nt understand. Please contact <a href='https://wa.me/+919711999180'style='color: white;'>+919711999180</a> for this query."
                 }
-                botMsg = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header">  <p style="text-transform: none;">'+ msgreply +'</p></div></div>'
+                botMsg = '<div class="bot-inbox inbox"><div class="msg-header">  <p style="text-transform: none;">'+ msgreply +'</p></div></div>'
                 $(".form").append(botMsg);
             });
         });
