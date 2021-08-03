@@ -40,7 +40,7 @@
         width: 370px;
         background: #fff;
         border-radius: 5px;
-        border: 1px solid lightgrey;
+        border: 2px solid lightgray;
         border-top: 0px;
     }
     .wrapper .title{
@@ -78,9 +78,20 @@
         font-size: 18px;
         background: #007bff;
     }
+    .user-icon {
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        font-size: 18px;
+        background: lightgreen;
+        margin-left: 10px;
+    }
     .wrapper .form .inbox .msg-header{
         margin-left: 10px;
-        max-width: 90%;
+        max-width: 70%;
     }
     .form .inbox .msg-header p{
         color: #fff;
@@ -91,7 +102,7 @@
     }
     .form .user-inbox .msg-header p{
         color: #333;
-        background: #efefef;
+        background: lightgreen;
     }
     .wrapper .typing-field{
         display: flex;
@@ -177,8 +188,11 @@
             <div class="title">Chatbot</div>
             <div class="form">
                 <div class="bot-inbox inbox">
+                    <div class="icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
                     <div class="msg-header">
-                        <p>Hello there, how can I help you?</p>
+                        <p>Hello there I am Jarvis, how can I help you?</p>
                     </div>
                 </div>
             </div>
@@ -241,11 +255,13 @@
         </footer>
         </section>
     </section>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("#send-btn").on("click", function(){
                 $value = $("#data").val();
-                $msg = '<div class="user-inbox inbox"><div class="msg-header"><p style="text-transform: none;">'+ $value +'</p></div></div>';
+                $msg = '<div class="user-inbox inbox"><div class="msg-header"><p style="text-transform: none;">'+ $value +'</p></div><div class="user-icon"><i class="fas fa-user"></i></div></div>';
                 $(".form").append($msg);
                 $("#data").val('');
                 qquery = $value.toLowerCase()
@@ -287,9 +303,9 @@
                     window.location.replace("https://artboxbynikita.github.io/artbox/Home.html");
                 }
                 else {
-                  msgreply = "I am sorry i could'nt understand. Please contact <a href='https://wa.me/+919711999180'style='color: white;'>+919711999180</a> for this query."
+                  msgreply = "I am sorry i could'nt understand. Please contact <a href='https://wa.me/+919711999180'style='color: white;'>+919711999180</a> or email at <a href='mailto:artboxbynikita@gmail.com' style='color: white;'>artboxbynikita@gmail.com</a>for this query."
                 }
-                botMsg = '<div class="bot-inbox inbox"><div class="msg-header">  <p style="text-transform: none;">'+ msgreply +'</p></div></div>'
+                botMsg = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-robot"></i></div><div class="msg-header">  <p style="text-transform: none;">'+ msgreply +'</p></div></div>'
                 $(".form").append(botMsg);
             });
         });
