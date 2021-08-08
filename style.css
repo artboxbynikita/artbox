@@ -194,6 +194,14 @@ body {
   max-width: 1170px;
   margin: auto;
 }
+.order {
+  margin-top: 5px;
+  text-align: center;
+}
+.order a {
+  color: red;
+  font-weight: bold;
+}
 .more a {
   color: var(--primary-color);
   font-weight: bold;
