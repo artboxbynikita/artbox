@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Artbox</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="icon" href="images/logo.jpg" type="image/jpg" sizes="16x16">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg" sizes="16x16" />
     <style>
         /*Chat*/
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
         }
 
         ::selection {
@@ -215,7 +215,7 @@
         </div>
     </nav>
     <section class="products">
-        <div class="wrapper" style='margin-top: 50px;'>
+        <div class="wrapper" style="margin-top: 50px">
             <div class="title">Chatbot</div>
             <div class="form">
                 <div class="bot-inbox inbox">
@@ -229,14 +229,14 @@
             </div>
             <div class="typing-field">
                 <div class="input-data">
-                    <input id="data" type="text" placeholder="Type something here.." style='text-transform:none;'
-                        required>
+                    <input id="data" type="text" placeholder="Type something here.." style="text-transform: none"
+                        required />
                     <button id="send-btn">Send</button>
                 </div>
             </div>
         </div>
     </section>
-    <section style="margin-top: auto; margin-bottom: 0%;">
+    <section style="margin-top: auto; margin-bottom: 0%">
         <section>
             <footer class="footer">
                 <div class="foot-logo">
@@ -276,7 +276,9 @@
                                 <li><a href="#">Nikita Jain</a></li>
                                 <li><a href="#">+91 9711999180</a></li>
                                 <li><a href="https://wa.me/+919711999180">Whatsapp</a></li>
-                                <li><a href="#" style="text-transform: none;">artboxbynikita@gmail.com</a></li>
+                                <li>
+                                    <a href="#" style="text-transform: none">artboxbynikita@gmail.com</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="footer-col">
@@ -291,22 +293,30 @@
                             <h4>Follow Us</h4>
                             <div class="social-links">
                                 <a href="https://www.instagram.com/_.nikitajain._/"><img src="images/insta.png"
-                                        alt=""></a>
-                                <a href='https://wa.me/+919711999180'><img src="images/what.png" alt=""></a>
+                                        alt="" /></a>
+                                <a href="https://wa.me/+919711999180"><img src="images/what.png" alt="" /></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="credit" style="text-align: center; color: white; margin-top: 30px;">All Rights Reserved
+                <div class="credit" style="text-align: center; color: white; margin-top: 30px">
+                    All Rights Reserved
                 </div>
             </footer>
         </section>
     </section>
     <script type="text/javascript">
+        fetch(
+                "https://api.countapi.xyz/update/artboxbynikita/9585d9ce-52ce-45a9-a392-5ccbdb763b43/?amount=1"
+            )
+            .then((res) => res.json())
+            .then((res) => {
+                console.log(res.value);
+            });
         $(document).ready(function () {
             $("#send-btn").on("click", function () {
                 $value = $("#data").val();
-                qquery = $value.toLowerCase()
+                qquery = $value.toLowerCase();
                 // Queries for the bots reply
                 const query = qquery.split(" ");
                 for (i in query) {
@@ -323,56 +333,58 @@
                     }
                 }
                 $(".form").append($msg);
-                $("#data").val('');
-                let msgreply = "None"
+                $("#data").val("");
+                let msgreply = "None";
                 if (query.includes("hi")) {
-                    msgreply = "Hi I am Jarvis"
+                    msgreply = "Hi I am Jarvis";
                 } else if (query.includes("hello")) {
-                    msgreply = "Hello I am Jarvis"
+                    msgreply = "Hello I am Jarvis";
                 } else if (query.includes("order")) {
                     msgreply =
-                        "Due to technical issue We are currently not taking any order online. Please contact <a href='https://wa.me/+919711999180' style='color: white;'>+919711999180 on Whatsapp</a> to order"
+                        "Due to technical issue We are currently not taking any order online. Please contact <a href='https://wa.me/+919711999180' style='color: white;'>+919711999180 on Whatsapp</a> to order";
                 } else if (query.includes("name")) {
-                    msgreply = "Hello. My name is Jarvis"
+                    msgreply = "Hello. My name is Jarvis";
                 } else if (query.includes("thanks")) {
-                    msgreply = "You are welcome!"
+                    msgreply = "You are welcome!";
                 } else if (query.includes("thank")) {
-                    msgreply = "You are welcome!"
-                } else if (query.includes('rakhi')) {
-                    msgreply = "Rakhi webpage"
-                    window.location.replace("https://artboxbynikita.github.io/artbox/Rakhi.html");
-                } else if (query.includes('home')) {
-                    msgreply = "Home webpage"
-                    window.location.replace("https://artboxbynikita.github.io/artbox/Home.html");
-                } else if (query.includes('index')) {
-                    msgreply = "Home webpage"
-                    window.location.replace("https://artboxbynikita.github.io/artbox/Home.html");
-                } else if (query.includes('homes')) {
-                    msgreply = "Home webpage"
-                    window.location.replace("https://artboxbynikita.github.io/artbox/Home.html");
-                } else if (query.includes('admin')) {
+                    msgreply = "You are welcome!";
+                } else if (query.includes("rakhi")) {
+                    msgreply = "Rakhi webpage";
+                    window.location.replace(
+                        "https://artboxbynikita.github.io/artbox/Rakhi.html"
+                    );
+                } else if (query.includes("home")) {
+                    msgreply = "Home webpage";
+                    window.location.replace(
+                        "https://artboxbynikita.github.io/artbox/Home.html"
+                    );
+                } else if (query.includes("index")) {
+                    msgreply = "Home webpage";
+                    window.location.replace(
+                        "https://artboxbynikita.github.io/artbox/Home.html"
+                    );
+                } else if (query.includes("homes")) {
+                    msgreply = "Home webpage";
+                    window.location.replace(
+                        "https://artboxbynikita.github.io/artbox/Home.html"
+                    );
+                } else if (query.includes("admin")) {
                     fetch(
                             "https://api.countapi.xyz/update/artboxbynikita/9585d9ce-52ce-45a9-a392-5ccbdb763b43/?amount=-1"
                         )
                         .then((res) => res.json())
                         .then((res) => {
                             console.log(res.value);
-                        });
-                    fetch(
-                            "https://api.countapi.xyz/update/artboxbynikita/9585d9ce-52ce-45a9-a392-5ccbdb763b43/?amount=1"
-                        )
-                        .then((res) => res.json())
-                        .then((res) => {
-                            msgreply = 
-                            (res.value);
+                            msgreply = parseString(res.value);
                         });
                 } else {
                     msgreply =
-                        "I am sorry i could'nt understand. Please contact <a href='https://wa.me/+919711999180'style='color: white;'>+919711999180</a> or email at <a href='mailto:artboxbynikita@gmail.com' style='color: white;'>artboxbynikita@gmail.com</a> for this query."
+                        "I am sorry i could'nt understand. Please contact <a href='https://wa.me/+919711999180'style='color: white;'>+919711999180</a> or email at <a href='mailto:artboxbynikita@gmail.com' style='color: white;'>artboxbynikita@gmail.com</a> for this query.";
                 }
                 botMsg =
                     '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-robot"></i></div><div class="msg-header">  <p style="text-transform: none;">' +
-                    msgreply + '</p></div></div>'
+                    msgreply +
+                    "</p></div></div>";
                 $(".form").append(botMsg);
             });
         });
