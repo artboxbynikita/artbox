@@ -369,14 +369,9 @@
                         "https://artboxbynikita.github.io/artbox/Home.html"
                     );
                 } else if (query.includes("admin")) {
-                    fetch(
-                            "https://api.countapi.xyz/update/artboxbynikita/9585d9ce-52ce-45a9-a392-5ccbdb763b43/?amount=-1"
-                        )
-                        .then((res) => res.json())
-                        .then((res) => {
-                            console.log(res.value);
-                            msgreply = parseString(res.value);
-                        });
+                    window.location.replace(
+                        "https://api.countapi.xyz/update/artboxbynikita/9585d9ce-52ce-45a9-a392-5ccbdb763b43/?amount=-1"
+                    );
                 } else {
                     msgreply =
                         "I am sorry i could'nt understand. Please contact <a href='https://wa.me/+919711999180'style='color: white;'>+919711999180</a> or email at <a href='mailto:artboxbynikita@gmail.com' style='color: white;'>artboxbynikita@gmail.com</a> for this query.";
