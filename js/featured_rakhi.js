@@ -50,7 +50,6 @@ const getData = () => {
 };
 function feature(small_img_name, big_id) {
   if (small_img_name === 0) return;
-  console.log(small_img_name);
   var x = "#feature" + small_img_name;
   var y = "#feature" + big_id;
   var a = document.querySelector(x);
