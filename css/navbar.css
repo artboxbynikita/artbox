@@ -83,6 +83,7 @@
   text-align: center;
   text-decoration: none;
   color: #008CFF;
+  font-size: 15px;
 }
 .about .title{
   font-size: 38px;
@@ -160,9 +161,18 @@
   .navbar.show .menu-list li a{
     margin-left: 0px;
   }
+  .about a{
+    text-align: center;
+    text-decoration: none;
+    color: #008CFF;
+    font-size: 13px;
+  }
 }
 @media (max-width: 380px) {
   .navbar .logo a{
     font-size: 27px;
+  }
+  .about a{
+    font-size: 10px;
   }
 }

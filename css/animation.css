@@ -46,11 +46,11 @@
       margin-left: 40%;
     }
     .logoname {
-      margin-left: 15px;
+      margin-left: 20%;
     }
     .logoimg img {
       width: 250px;
-      margin-left: 15px;
+      margin-left: 20%;
     }
   }
   @media screen and (max-width: 400px) {
@@ -67,9 +67,16 @@
       margin-top: -80px;
     }
   }
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 290px) {
     .pic {
       margin-left: 3%;
+    }
+    .logoname {
+      margin-left: 10px;
+    }
+    .logoimg img {
+      width: 250px;
+      margin-left: 10px;
     }
   }
   
