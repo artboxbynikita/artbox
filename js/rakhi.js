@@ -4,6 +4,7 @@ $(document).ready(function () {
   get_Roli_Moli();
   get_Couples_Rakhi();
   get_Envelopes();
+  console.log("Testing...");
 });
 
 const get_Roli_Moli = () => {
