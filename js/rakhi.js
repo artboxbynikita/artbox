@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 const get_Roli_Moli = () => {
   axios
-    .get("https://mocki.io/v1/2456e994-fe7e-495b-9d28-2b5f2d061078")
+    .get("https://neev0511.github.io/JSON/roli_moli.json")
     .then((response) => {
       const data = response.data;
       var i = 0;
@@ -33,7 +33,7 @@ const get_Roli_Moli = () => {
 };
 const get_Kids_Rakhi = () => {
   axios
-    .get("https://mocki.io/v1/56e62794-4af5-4147-ba62-016700d4bc1c")
+    .get("https://neev0511.github.io/JSON/kids_rakhi.json")
     .then((response) => {
       const data = response.data;
       var i = 0;
@@ -57,7 +57,7 @@ const get_Kids_Rakhi = () => {
 };
 const get_Single_Rakhi = () => {
   axios
-    .get("https://mocki.io/v1/5b9a2836-1ffc-4599-b3c7-4e99d3b4d7ae")
+    .get("https://neev0511.github.io/JSON/single_rakhi.json")
     .then((response) => {
       const data = response.data;
       var i = 0;
@@ -81,7 +81,7 @@ const get_Single_Rakhi = () => {
 };
 const get_Couples_Rakhi = () => {
   axios
-    .get("https://mocki.io/v1/722e687e-194a-4455-8f75-36e6c96678f3")
+    .get("https://neev0511.github.io/JSON/couple_rakhi.json")
     .then((response) => {
       const data = response.data;
       var i = 0;
@@ -105,7 +105,7 @@ const get_Couples_Rakhi = () => {
 };
 const get_Envelopes = () => {
   axios
-    .get("https://mocki.io/v1/9ac81813-4b18-4a4b-8ec9-cc24e7c75dfb")
+    .get("https://neev0511.github.io/JSON/envelopes.json")
     .then((response) => {
       const data = response.data;
       var i = 0;

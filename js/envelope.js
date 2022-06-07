@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 const getData = () => {
   axios
-    .get("https://mocki.io/v1/9ac81813-4b18-4a4b-8ec9-cc24e7c75dfb")
+    .get("https://neev0511.github.io/JSON/envelopes.json")
     .then((response) => {
       const data = response.data;
       var i = 0;

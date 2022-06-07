@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 const getData = () => {
   axios
-    .get("https://mocki.io/v1/2456e994-fe7e-495b-9d28-2b5f2d061078")
+    .get("https://neev0511.github.io/JSON/roli_moli.json")
     .then((response) => {
       const data = response.data;
       var i = 0;
