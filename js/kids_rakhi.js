@@ -24,6 +24,7 @@ $(document).ready(function () {
     { img: 8885, price: 180 },
     { img: 8893, price: 140 },
     { img: 8894, price: 200 },
+    { img: 7580, price: 160 },
     { img: 8898, price: 120 },
   ];
   getData();
