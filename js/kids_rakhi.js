@@ -1,6 +1,5 @@
 $(document).ready(function () {
   js = [
-    { img: 7580, price: 160 },
     { img: 7586, price: 80 },
     { img: 7598, price: 120 },
     { img: 7602, price: 150 },
